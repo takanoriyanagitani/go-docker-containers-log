@@ -1,0 +1,39 @@
+linters:
+  enable-all: true
+  disable:
+    - tenv
+    - tagliatelle
+    - forbidigo
+    - revive
+    - depguard
+    - err113
+    - ireturn
+    - nlreturn
+    - nonamedreturns
+    - wrapcheck
+    - wsl
+    - gochecknoglobals
+    - exhaustive
+    - errorlint
+    - funlen
+    - forcetypeassert
+    - gocognit
+    - mnd
+
+linters-settings:
+  interfacebloat:
+    max: 16
+
+  varnamelen:
+    max-distance: 128
+
+  cyclop:
+    max-complexity: 16
+
+issues:
+  exclude:
+    - ST1001
+    - ST1003
+    - ST1017
+    - ST1023
+    - G115
